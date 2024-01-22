@@ -5,19 +5,19 @@ The feedback includes pertinent details such as Name, date posted, vehicle type,
 
 ## Key Features
 
- ###Facial Recognition:
+ **Facial Recognition:** 
  Utilizes computer vision capabilities for live facial recognition. 
- ###License Plate Identification:
+ **License Plate Identification:** 
  Implements a Python Haar classifier for license plate identification.
- ###Desktop App:
+ **Desktop App:** 
  Processes live video feeds and provides real-time feedback.
- ###Web Application:
+ **Web Application:** 
  Allows users to upload images and access the vision engine through a user-friendly interface.
- ###MySQL Database:
+ **MySQL Database:** 
  Stores feedback details, creating a centralized repository.
- ###Security Measures:
+ **Security Measures:** 
  Implements secure communication protocols, user authentication, and authorization mechanisms.
- ###Civilian Data Contribution:
+ **Civilian Data Contribution:** 
  Civilian users can upload information, and the military receives notifications only on a positive match.
 
 ## Getting Started
