@@ -1,0 +1,11 @@
+django
+djangorestframework
+opencv-python
+dlib-19.24.1-cp311-cp311-win_amd64.whl
+face_recognition
+numpy
+PySimpleGUI
+pillow
+scikit-image
+imutils
+pytesseract
