@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/15indexbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  
+}
+
+li a {
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+li a:hover {
+  border: 2px solid grey;
+  border-radius: 1.25rem;
+}
+
+#search-form {
+  border: 1px solid white;
+  align-items: center;
+  padding: 0.3125rem;
+  border-radius: 7.5rem;
+  height: 1.875rem;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
+}
+
+#menu {
+  margin-right: 1.5rem;
+}
+main {
+  min-height: 100vh;
+}
+
+#signIn {
+  height: 44px;
+  background: none;
+  border: 2px solid #5b6d50;
+  border-radius: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+#signIn:hover {
+  background: #5b6d50;
+  border: none;
+}
+
+#signIn a {
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.00125rem;
+  color: #000;
+  text-decoration: none;
+}
+
+#glass-container {
+  position: relative;
+  padding: 20px;
+  background: rgba(126, 146, 89, 0.24);
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional box shadow for depth */
+}
+
+#upload {
+  padding: 1.5rem 3.5rem;
+  align-items: center;
+  gap: 0.625rem;
+  border: none;
+  border-radius: 1.25rem;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.00125rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  background: #5b6d50;
+  color: #ffffff;
+}
+#upload:hover {
+  border: 2px solid #5b6d50;
+  backdrop-filter: blur(10px);
+  background: rgba(126, 146, 89, 0.24);
+}
+
+#socials button {
+  padding: none;
+  margin: none;
+  background: none;
+  border: none;
+}

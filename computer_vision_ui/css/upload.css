@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+  box-sizing: border-box;
+}
+li a {
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+li a:hover {
+  border: 2px solid grey;
+  border-radius: 1.25rem;
+}
+
+#search-form {
+  border: 1px solid white;
+  align-items: center;
+  padding: 0.3125rem;
+  border-radius: 7.5rem;
+  height: 1.875rem;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
+}
+
+#header {
+  height: 50px;
+}
+#menu {
+  margin-right: 3%;
+}
+
+#file-type button {
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem; /* 100% */
+  letter-spacing: 0.00125rem;
+  padding: 0.7rem 1rem;
+  background: #1c6644;
+  border: 1px solid #1c6644;
+  border-radius: 0.5rem;
+}
+#file-type button:hover {
+  background: none;
+  color: #1c6644;
+}
+
+#upload-btn {
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #fff;
+  letter-spacing: 0.00125rem;
+  border: 1px solid #7e9259;
+  border-radius: 1.25rem;
+  background: #7e9259;
+  padding: 1.5rem 3rem;
+}
+#upload-btn:hover {
+  background: none;
+  color: #7e9259;
+}
