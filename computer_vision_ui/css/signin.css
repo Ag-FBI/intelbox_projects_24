@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #ffffff;
+}
+
+li a {
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+li a:hover {
+  border: 2px solid grey;
+  border-radius: 1.25rem;
+}
+
+#search-form {
+  border: 1px solid white;
+  align-items: center;
+  padding: 0.3125rem;
+  border-radius: 7.5rem;
+  height: 1.875rem;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
+}
+
+#header {
+  height: 50px;
+}
+#menu {
+  margin-right: 3%;
+}
+#bg-img {
+  background-image: url("/assets/iamge\ container.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 49.9375rem;
+}
+#bg-img h1 {
+  color: var(--primary-colour, #073516);
+  font-family: Poppins;
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.5rem;
+}
+
+#signin-form input {
+  width: 100%;
+  max-width: 30rem;
+  margin-top: 3rem;
+  border: none;
+  border-bottom: 2px solid #073516;
+  padding-left: 3rem;
+}
+#signin-form input:focus {
+  outline: none;
+}
+
+#user-options button {
+  width: 100%;
+  max-width: 30rem;
+  flex-shrink: 0;
+  margin-top: 4rem;
+  border: 1px solid #073516;
+  border-radius: 1.25rem;
+  font-family: Poppins;
+  font-size: 1.8125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.5rem;
+}
+
+#user-options #signin {
+  background: #073516;
+  color: #ffffff;
+}
+#user-options #signin:hover {
+  background: none;
+  color: #073516;
+}
+
+#signin-form a button:hover {
+  background: #073516;
+  color: #fff;
+}
+#success,
+#fail {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+}

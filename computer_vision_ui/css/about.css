@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/15indexbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  
+}
+
+li a {
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+li a:hover {
+  border: 2px solid grey;
+  border-radius: 1.25rem;
+}
+
+#search-form {
+  border: 1px solid white;
+  align-items: center;
+  padding: 0.3125rem;
+  border-radius: 7.5rem;
+  height: 1.875rem;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
+}
+
+#menu {
+  margin-right: 1.5rem;
+}

@@ -9,3 +9,6 @@ pillow
 scikit-image
 imutils
 pytesseract
+drf-extra-fields
+mysql-connector-python
+django-cors-headers
