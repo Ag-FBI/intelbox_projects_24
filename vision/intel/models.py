@@ -19,7 +19,6 @@ class PersonInfo(models.Model):
         verbose_name_plural = "Person Info"
 
 class Image(models.Model):
-    person = models.ForeignKey(PersonInfo, on_delete = models.CASCADE)
     image = models.FileField(upload_to = "info/")
 
 

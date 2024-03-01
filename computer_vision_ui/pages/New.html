@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and User Info</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <h1>User Info</h1>
+    <div id="user-info"></div>
+
+    <h1>Image Upload</h1>
+    <input type="file" id="image-input">
+    <button id="upload-button">Upload Image</button>
+    <div id="image-preview"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const userInfoElement = document.getElementById("user-info");
+    const imageInput = document.getElementById("image-input");
+    const uploadButton = document.getElementById("upload-button");
+    const imagePreview = document.getElementById("image-preview");
+
+    // Fetch user info
+    fetch("http://localhost:8000/user-info/")
+        .then(response => response.json())
+        .then(data => {
+            userInfoElement.innerHTML = JSON.stringify(data, null, 2);
+        })
+        .catch(error => console.error("Error fetching user info:", error));
+
+    // Image upload event listener
+    uploadButton.addEventListener("click", function () {
+        const formData = new FormData();
+        formData.append("image", imageInput.files[0]);
+
+        fetch("http://localhost:8000/images/", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Image uploaded successfully:", data);
+            // Display uploaded image
+            const imgElement = document.createElement("img");
+            imgElement.src = data.image;
+            imgElement.alt = "Uploaded Image";
+            imagePreview.appendChild(imgElement);
+        })
+        .catch(error => console.error("Error uploading image:", error));
+    });
+});
+
+    </script>
+</body>
+</html>

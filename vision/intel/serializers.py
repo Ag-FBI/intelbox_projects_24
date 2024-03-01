@@ -7,11 +7,8 @@ class PersonInfoSerializer(serializers.ModelSerializer):
         model = PersonInfo
         fields = "__all__"
 
-class ImageSerializer(serializers.ModelSerializer):
-    image = serializers.ImageField()
-    class Meta:
-        model = Image
-        fields = "__all__"
+class ImageSerializer(serializers.Serializer):
+        image = serializers.ImageField()
     
       
 

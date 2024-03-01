@@ -11,7 +11,6 @@ from rest_framework.parsers import MultiPartParser, FormParser
 class UserView(ListCreateAPIView):
       queryset = PersonInfo()
       serializer_class = PersonInfoSerializer
-      parser_classes = [MultiPartParser, FormParser]
 
       def post(self, request,*args, **kwargs):
             serializer = PersonInfoSerializer(data=request.data)
@@ -25,10 +24,21 @@ class UserView(ListCreateAPIView):
             serializer = PersonInfoSerializer(info, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
 
-class  ImageView(ListCreateAPIView):
-      queryset = Image
-      serializer_class = ImageSerializer
-      parser_classes = [MultiPartParser, FormParser]
+class ImageView(APIView):
+      queryset = Image()
+      parser_classes = (MultiPartParser, FormParser)
+      def post(self, request,*args, **kwargs):
+            serializer = ImageSerializer(data=request.data)
+            if serializer.is_valid():
+                  serializer.save()
+                  return Response(serializer.data, status=status.HTTP_201_CREATED)  
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+      
+      def get(self, request, *args, **kwargs):
+            info = self.queryset
+            serializer = ImageSerializer(info)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
 
 class LoginView(APIView):
       def post(self, request, *args, **kwargs):
