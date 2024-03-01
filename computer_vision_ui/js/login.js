@@ -31,7 +31,7 @@ function submitLoginForm() {
       console.log("Login successful:", response);
       // Redirect the user or perform other actions based on the response
       setTimeout(function () {
-        window.location.href = "/pages/dashboard.html";
+        window.location.href = "../pages/dashboard.html";
       }, 2000);
     },
     error: function (xhr, status, error) {

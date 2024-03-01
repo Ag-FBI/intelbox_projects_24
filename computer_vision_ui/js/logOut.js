@@ -10,7 +10,7 @@ $(document).ready(function () {
         localStorage.removeItem("isLoggedIn");
         console.log(response);
         // Example: Redirect to login page
-        window.location.href = "/index.html";
+        window.location.href = "../index.html";
       },
       error: function (xhr, status, error) {
         // If logout fails, log error message
