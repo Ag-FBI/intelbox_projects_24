@@ -8,7 +8,6 @@ DEFAULT_ENCODINGS_PATH = Path("..\output\encodings.pkl")
 
 Path("..\pictures").mkdir(exist_ok=True)
 Path("..\output").mkdir(exist_ok=True)
-Path("..\exactness").mkdir(exist_ok=True)
 
 
 def encode_known_faces(

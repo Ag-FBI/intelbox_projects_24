@@ -19,7 +19,7 @@ def recognize_faces(
         loaded_encodings = pickle.load(f)
 
     #input_image = face_recognition.load_image_file(image_location)
-    input_image = face_recognition.load_image_file(Path("../pictures/Miss Fred/Freddie2.jpg"))
+    input_image = face_recognition.load_image_file(Path("../pictures/Shadrach/Shed1.jpg"))
     input_face_locations = face_recognition.face_locations(
         input_image, model=model
     )
