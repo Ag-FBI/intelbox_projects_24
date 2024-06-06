@@ -37,7 +37,7 @@ while ret:
     bbox +=1
     ret, frame = cap.read()
     if ret:
-        if frame_nmr > 20:
+        if frame_nmr > 30:
             break
         results[frame_nmr] = {}
         data["text"] = {}
