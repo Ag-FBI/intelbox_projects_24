@@ -5,7 +5,7 @@ import json
 import requests
 
 recipient = "http://127.0.0.1:8000/plate_reader/process_frame/"
-video_address = "C:/Users/kikio/PycharmProjects/Project_base/Setup/Video_data/MVI_0652.MP4"
+video_address = "file_path"
 
 coco_model = YOLO('yolov8n.pt')
 license_plate_detector = YOLO('license_plate_detector.pt')
