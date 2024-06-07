@@ -109,8 +109,8 @@ while ret:
                                                   "bbox_score":score,
                                                    "text_score":confidence_score
                                                     }}
-for frame_nmr, details in results.items():
-    for car_id, items in details.items():
-        data = {"text":f"{items['license_plate']['text']}",
-        "bbox":f"{items['license_plate']['bbox']}"}
-        requests.post(recipient, data)
+                    for frame_nmr, details in results.items():
+                        for car_id, items in details.items():
+                            data = {"text":f"{items['license_plate']['text']}",
+                            "bbox":f"{items['license_plate']['bbox']}"}
+                            requests.post(recipient, data)

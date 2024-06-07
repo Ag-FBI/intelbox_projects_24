@@ -3,5 +3,7 @@ ultralytics
 Django
 djangorestframework
 easyocr
+filterpy
+imutils
 
 
