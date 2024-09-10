@@ -4,13 +4,13 @@ import imutils
 import json
 import requests
 
-recipient = "http://127.0.0.1:8000/plate_reader/process_frame/"
-video_address = "file_path"
+recipient = "url_path"
+video_address = "live_feed"
 
 coco_model = YOLO('yolov8n.pt')
 license_plate_detector = YOLO('license_plate_detector.pt')
 
-file = 'items_two.json'
+file = 'json_file'
 
 
 cap = cv2.VideoCapture(video_address)
