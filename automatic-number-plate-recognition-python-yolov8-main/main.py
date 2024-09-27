@@ -94,8 +94,6 @@ while ret:
                 for contour in sorted_cnts:
                     cv2.drawContours(cropped_image, [contour], -1, (0,255,0), 2)
 
-        # cv2.imshow("plate", rotated)
-        # cv2.waitKey(0)
 
 
 
